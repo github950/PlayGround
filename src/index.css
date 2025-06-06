@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 👇 Slick Carousel styles */
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+/* style.css or tailwind global file */
+.slick-dots li .dot {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.slick-dots li.slick-active .dot {
+  background-color: white;
+  transform: scale(1.25);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* globals.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
